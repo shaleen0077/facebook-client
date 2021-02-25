@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    overflow: hidden !important;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.modal {
+    height: 380px;
+    border-radius: 10px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+
+    .modal-header {
+      padding: 15px 20px;
+      position: relative;
+      border-bottom: 1px solid #ccc;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+
+        .close-dialog {
+          float: right;
+          background: #eff2f5;
+          border-radius: 22px;
+          font-size: 20px;
+          color: #7b7575;
+          border-color: #eee;
+          padding: 5px 10px;
+          top: -5px;
+          position: relative;
+          cursor: pointer;
+          right: -15px;
+        }
+      }
+    }
+
+    .modal-content {
+      height: 300px;
+
+      textarea {
+        height: 60%;
+        overflow: hidden;
+        overflow-y: auto;
+        font-size: 20px;
+        padding: 5px;
+        border: none;
+        width: 99%;
+        resize: none;
+        margin-top: 16px;
+      }
+    }
+
+    .modal-footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      button {
+        background: #eff2f5;
+        border: none;
+        padding: 10px;
+      }
+    }
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}

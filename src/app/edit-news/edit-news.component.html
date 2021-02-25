@@ -1,0 +1,24 @@
+
+<div class="backdrop">
+    <div class="modal">
+        <div class="modal-header">
+        <h2 class="u-text-center">
+            Edit Post
+            <span class="close-dialog" (click)="onCloseEditModal()">X</span>
+        </h2> 
+        </div>
+        <div class="modal-content">
+        <div class="feed-poster ml-0">
+            <img class="poster-image" height="28" width="28" src="{{ user.imgSrc }}" />
+            <div class="poster-name">
+            <span>{{ user.firstName }} {{ user.lastName }}</span>
+            <span>Public</span>
+            </div>
+        </div> 
+        <textarea [(ngModel)]="editNewsText" placeholder="What's on your mind, John?"></textarea>
+        </div>
+        <div class="modal-footer">
+            <button class="post-news-btn" (click)="onEditNews()">Edit</button>
+        </div>
+    </div>
+</div>

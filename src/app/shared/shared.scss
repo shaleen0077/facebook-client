@@ -1,0 +1,47 @@
+
+@import "../../variables.scss";
+
+.post-news-btn {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid $grey-light;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.feed-poster {
+    display: flex;
+    padding: 16px 16px 0;
+  
+    .poster-image {
+      border: 1px solid $grey-lighter;
+      border-radius: 40px;
+      margin-right: 10px;
+    }
+  
+    .poster-name {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      .post-user-name {
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgb(5,5,5);
+        font-family: system-ui;
+      }
+    }
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #80808080;
+  }
+  
+  
